@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@muhammad-usama12/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini Lodash clone. This Lotide library provides some basic function implementation. This project was conducted by Muhammad Usama to display teachings of Lighthouse Labs.",
   "main": "index.js",
   "directories": {
     "test": "test"
