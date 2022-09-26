@@ -1,20 +1,5 @@
-const eqArrays = function (arr1, arr2) {
-  for (let i = 0; i < arr1.length && arr2.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function (actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(` ✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  }
-  if (!eqArrays(actual, expected)) {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const eqArrays = require("./eqArrays");
+const assertArraysEqual = require("./assertArraysEqual");
 
 const letterPositions = function (sentence) {
   const results = {};
@@ -31,6 +16,8 @@ const letterPositions = function (sentence) {
   return results;
 };
 
-console.log(letterPositions("hello"));
+module.exports = letterPositions;
 
-assertArraysEqual(letterPositions("hello").e, [1]);
+// console.log(letterPositions("hello"));
+
+// assertArraysEqual(letterPositions("hello").e, [1]);
